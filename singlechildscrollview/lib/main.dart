@@ -20,34 +20,36 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text("Hello"),
           ),
-          body: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: <Widget>[
-                Text("Hello"),
-                Container(
-                  height: 200,
-                  width: 200,
-                  color: Colors.red,
-
-                ),
-
-                SizedBox(width: 10,),
+          body: ListView(
+            scrollDirection: Axis.vertical,
+            children: <Widget>[
+             Column(
+               children: <Widget>[
+                 Text("Hello"),
                  Container(
-                  height: 200,
-                  width: 200,
-                  color: Colors.red,
-                ),
-                SizedBox(width: 10,),
-                 Container(
-                  height: 200,
-                  width: 200,
-                  color: Colors.red,
-                ),
-                SizedBox(width: 10,),
+                   height: 200,
+                   width: 200,
+                   color: Colors.red,
 
-              ],
-            ),
+                 ),
+
+                 SizedBox(height: 10, width: 10,),
+                 Container(
+                   height: 200,
+                   width: 200,
+                   color: Colors.red,
+                 ),
+                 SizedBox(height: 10, width: 10,),
+                 Container(
+                   height: 200,
+                   width: 200,
+                   color: Colors.red,
+                 ),
+
+
+               ],
+             ),
+           ],
           ),
         ),
       ),
